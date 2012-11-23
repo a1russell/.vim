@@ -1,6 +1,9 @@
 if exists("did_load_filetypes")
   finish
 endif
+
+let g:tex_flavor='latex'
+
 augroup filetypedetect
   au BufNewFile,BufRead *.txt setfiletype text
   au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
