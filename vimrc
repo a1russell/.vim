@@ -34,6 +34,7 @@ filetype plugin indent on " enable filetype-specific plugins and indenting
 set secure " disable unsafe commands
 set hidden " hide, rather than unload, buffers upon abandonment
 let mapleader = "," " leader key
+set ruler " line and column number#
 
 " Set clipboard
 if has('unnamedplus') &&
