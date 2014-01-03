@@ -24,6 +24,7 @@ Bundle 'ervandew/supertab'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'dag/vim2hs'
+Bundle 'vim-scripts/groovy.vim--Ruley'
 Bundle 'pbrisbin/html-template-syntax'
 Bundle 'frimik/vim-puppet'
 
