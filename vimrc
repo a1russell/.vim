@@ -1,4 +1,4 @@
-call pathogen#infect('bundle-pathogen') " Manipulate runtime path via Pathogen
+call pathogen#infect('bundle-pathogen/{}') " Manipulate runtime path via Pathogen
 set nocompatible " Use Vim defaults instead of 100% vi compatibility
 
 " Vundle config setup
