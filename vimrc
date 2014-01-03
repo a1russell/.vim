@@ -29,6 +29,7 @@ Bundle 'vim-scripts/groovy.vim--Ruley'
 Bundle 'wting/rust.vim'
 Bundle 'pbrisbin/html-template-syntax'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'groenewege/vim-less'
 Bundle 'rodjek/vim-puppet'
 
 " Config
