@@ -28,6 +28,7 @@ Bundle 'dag/vim2hs'
 Bundle 'vim-scripts/groovy.vim--Ruley'
 Bundle 'wting/rust.vim'
 Bundle 'pbrisbin/html-template-syntax'
+Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'rodjek/vim-puppet'
 
 " Config
@@ -69,6 +70,9 @@ let g:EasyMotion_leader_key = '<Leader>'
 if ! executable("pep8")
   let g:pep8_map="\u0000"
 endif
+
+" Enable only specific javascript libraries.
+let g:used_javascript_libs = 'jquery,angularjs,requirejs'
 
 if has("autocmd")
   " Set absolute line numbers in insert mode, relative otherwise
