@@ -25,6 +25,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'dag/vim2hs'
 Bundle 'vim-scripts/groovy.vim--Ruley'
+Bundle 'wting/rust.vim'
 Bundle 'pbrisbin/html-template-syntax'
 Bundle 'rodjek/vim-puppet'
 
