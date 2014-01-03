@@ -26,7 +26,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'dag/vim2hs'
 Bundle 'vim-scripts/groovy.vim--Ruley'
 Bundle 'pbrisbin/html-template-syntax'
-Bundle 'frimik/vim-puppet'
+Bundle 'rodjek/vim-puppet'
 
 " Config
 set backspace=indent,eol,start " more powerful backspacing
