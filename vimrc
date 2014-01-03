@@ -85,11 +85,15 @@ if has("autocmd")
 
   " Strip trailing whitespace on save
   augroup striptrailingws
-    autocmd FileType python,ruby,haskell,c,cpp,java,javascript,
-                    \php,html,htmldjango,eruby,css,less,yaml
+    autocmd FileType scala,java,haskell,rust,c,cpp,
+                    \ruby,python,javascript,groovy,php,
+                    \html,htmldjango,eruby,css,less,sass,scss,
+                    \yaml,xml,puppet
                     \ set fileformat=unix
-    autocmd FileType python,ruby,haskell,c,cpp,java,javascript,
-                    \php,html,htmldjango,eruby,css,less,yaml
+    autocmd FileType scala,java,haskell,rust,c,cpp,
+                    \ruby,python,javascript,groovy,php,
+                    \html,htmldjango,eruby,css,less,sass,scss,
+                    \yaml,xml,puppet
                     \ autocmd BufWritePre <buffer>
                     \ :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
   augroup END
