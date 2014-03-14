@@ -42,6 +42,7 @@ set hidden " hide, rather than unload, buffers upon abandonment
 let mapleader = "," " leader key
 set ruler " line and column number#
 set autoread " reload changed files
+set nofoldenable " disable code folding
 
 " Set clipboard
 if has('unnamedplus') &&
