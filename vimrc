@@ -64,7 +64,7 @@ map <C-Insert> "*y
 map! <C-Insert> "*y
 
 " Map NERD Tree to \d
-nmap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+nmap <leader>d :execute 'NERDTreeToggle "' . getcwd() . '"'<CR>
 
 " EasyMotion leader key
 let g:EasyMotion_leader_key = '<Leader>'
