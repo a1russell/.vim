@@ -1,3 +1,5 @@
 bundle/
 bundle-pathogen/
 .netrwhist
+vimrc.local
+plugin/local.vim
