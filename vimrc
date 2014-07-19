@@ -1,11 +1,11 @@
-let vimhome = $HOME . '/.vim/'
+let vimhome = $HOME . '/.vim'
 
 call pathogen#infect('bundle-pathogen/{}') " Manipulate runtime path via Pathogen
 set nocompatible " Use Vim defaults instead of 100% vi compatibility
 
 " Vundle config setup
 filetype off
-let &rtp .= ',' . vimhome . 'bundle/vundle'
+let &rtp .= ',' . vimhome . '/bundle/vundle'
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
@@ -147,6 +147,6 @@ else
   set pastetoggle=<F2>
 endif
 
-if filereadable(vimhome . 'vimrc.local')
-  execute 'source ' . vimhome . 'vimrc.local'
+if filereadable(vimhome . '/vimrc.local')
+  execute 'source ' . vimhome . '/vimrc.local'
 endif
