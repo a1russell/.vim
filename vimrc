@@ -5,7 +5,7 @@ set nocompatible " Use Vim defaults instead of 100% vi compatibility
 " Vundle config setup
 filetype off
 let &rtp .= ',' . vimhome . '/bundle/vundle'
-call vundle#rc()
+call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " Plugins
@@ -36,6 +36,8 @@ Plugin 'tpope/vim-haml'
 Plugin 'groenewege/vim-less'
 Plugin 'rodjek/vim-puppet'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
+
+call vundle#end()
 
 " Config
 set backspace=indent,eol,start " more powerful backspacing
