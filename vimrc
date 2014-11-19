@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'bufkill.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'mihaifm/bufstop'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'embear/vim-localvimrc'
@@ -70,6 +71,11 @@ set incsearch
 " Make ctrl-insert copy
 map <C-Insert> "*y
 map! <C-Insert> "*y
+
+" Bufstop key mappings for buffer switching
+map <leader>b :Bufstop<CR>
+map <leader>a :BufstopModeFast<CR>
+let g:BufstopAutoSpeedToggle = 1
 
 " Map NERD Tree to \d
 nmap <leader>d :execute 'NERDTreeToggle "' . getcwd() . '"'<CR>
