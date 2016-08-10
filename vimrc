@@ -91,6 +91,9 @@ endif
 " Enable only specific javascript libraries.
 let g:used_javascript_libs = 'jquery,angularjs,requirejs'
 
+" Disable JSON quote conceal
+let g:vim_json_syntax_conceal = 0
+
 if has("autocmd")
   " Set absolute line numbers in insert mode, relative otherwise
   augroup linenumbers
