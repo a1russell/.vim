@@ -1,4 +1,4 @@
-let vimhome = $HOME . '/.vim'
+let vimhome = expand('<sfile>:p:h')
 
 set nocompatible " Use Vim defaults instead of 100% vi compatibility
 
@@ -6,7 +6,7 @@ set nocompatible " Use Vim defaults instead of 100% vi compatibility
 filetype off
 let &rtp .= ',' . vimhome . '/bundle/vundle'
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'scrooloose/nerdtree'
