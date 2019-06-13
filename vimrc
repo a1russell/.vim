@@ -2,44 +2,41 @@ let vimhome = expand('<sfile>:p:h')
 
 set nocompatible " Use Vim defaults instead of 100% vi compatibility
 
-" Vundle config setup
-filetype off
-let &rtp .= ',' . vimhome . '/bundle/vundle'
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+" vim-plug config setup
+call plug#begin(vimhome . '/bundle')
 
 " Plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'bufkill.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'mihaifm/bufstop'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'embear/vim-localvimrc'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'ervandew/supertab'
-Plugin 'rking/ag.vim'
-Plugin 'elzr/vim-json'
-Plugin 'ingydotnet/yaml-vim'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'dag/vim2hs'
-Plugin 'vim-scripts/groovy.vim--Ruley'
-Plugin 'wting/rust.vim'
-Plugin 'pbrisbin/html-template-syntax'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'tpope/vim-haml'
-Plugin 'groenewege/vim-less'
-Plugin 'rodjek/vim-puppet'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plug 'scrooloose/nerdtree'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'vim-scripts/bufkill.vim'
+Plug 'scrooloose/syntastic'
+Plug 'mihaifm/bufstop'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'embear/vim-localvimrc'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'ervandew/supertab'
+Plug 'rking/ag.vim'
+Plug 'elzr/vim-json'
+Plug 'ingydotnet/yaml-vim'
+Plug 'chase/vim-ansible-yaml'
+Plug 'vim-ruby/vim-ruby'
+Plug 'derekwyatt/vim-scala'
+Plug 'dag/vim2hs'
+Plug 'vim-scripts/groovy.vim--Ruley'
+Plug 'wting/rust.vim'
+Plug 'pbrisbin/html-template-syntax'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'tpope/vim-haml'
+Plug 'groenewege/vim-less'
+Plug 'rodjek/vim-puppet'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
 
-call vundle#end()
+call plug#end()
 
 " Config
 set backspace=indent,eol,start " more powerful backspacing
