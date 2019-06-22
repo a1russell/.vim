@@ -6,6 +6,7 @@ set nocompatible " Use Vim defaults instead of 100% vi compatibility
 call plug#begin(vimhome . '/bundle')
 
 " Plugins
+Plug 'lifepillar/vim-solarized8'
 Plug 'scrooloose/nerdtree'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'vim-scripts/bufkill.vim'
@@ -140,7 +141,8 @@ if has('gui_running')
   map! <S-Insert> <MiddleMouse>
 
   " Set color scheme
-  colorscheme torte
+  set background=dark
+  colorscheme solarized8
 
   " Enable right-click context menu
   set mousemodel=popup
