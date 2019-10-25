@@ -132,32 +132,8 @@ highlight PyFlakes ctermbg=0
 " Set SuperTab to complete based on context (omni completion friendly)
 let g:SuperTabDefaultCompletionType="context"
 
-if has('gui_running')
-  " Set maximum number of tabs to open at once
-  set tabpagemax=25
-
-  " Make shift-insert work like in Xterm
-  map <S-Insert> <MiddleMouse>
-  map! <S-Insert> <MiddleMouse>
-
-  " Set color scheme
-  set background=dark
-  colorscheme solarized8
-
-  " Enable right-click context menu
-  set mousemodel=popup
-
-  " Enable horizontal scrollbar
-  set guioptions+=b
-
-  if has("autocmd")
-    " Auto-save files when focus is lost
-    au FocusLost * silent! wa
-  endif
-else
-  " Make F2 toggle paste mode
-  set pastetoggle=<F2>
-endif
+" Make F2 toggle paste mode
+set pastetoggle=<F2>
 
 if filereadable(vimhome . '/vimrc.local')
   execute 'source ' . vimhome . '/vimrc.local'
