@@ -97,12 +97,12 @@ if has("autocmd")
     autocmd FileType scala,java,haskell,rust,c,cpp,
                     \ruby,python,typescript,javascript,groovy,php,
                     \html,htmldjango,eruby,css,less,sass,scss,
-                    \yaml,xml,puppet
+                    \yaml,json,xml,puppet
                     \ set fileformat=unix
     autocmd FileType scala,java,haskell,rust,c,cpp,
                     \ruby,python,typescript,javascript,groovy,php,
                     \html,htmldjango,eruby,css,less,sass,scss,
-                    \yaml,xml,puppet
+                    \yaml,json,xml,puppet
                     \ autocmd BufWritePre <buffer>
                     \ :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
   augroup END
