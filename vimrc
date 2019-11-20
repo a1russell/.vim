@@ -1,6 +1,6 @@
 let vimhome = expand('<sfile>:p:h')
 
-set nocompatible " Use Vim defaults instead of 100% vi compatibility
+set nocompatible  " Use Vim defaults instead of 100% vi compatibility
 
 " vim-plug config setup
 call plug#begin(vimhome . '/bundle')
@@ -38,16 +38,16 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 call plug#end()
 
 " Config
-set backspace=indent,eol,start " more powerful backspacing
-set nowrap " disable line wrapping
-syntax on " enable syntax highlighting
-filetype plugin indent on " enable filetype-specific plugins and indenting
-set secure " disable unsafe commands
-set hidden " hide, rather than unload, buffers upon abandonment
-let mapleader = "," " leader key
-set ruler " line and column number#
-set autoread " reload changed files
-set nofoldenable " disable code folding
+set backspace=indent,eol,start  " more powerful backspacing
+set nowrap  " disable line wrapping
+syntax on  " enable syntax highlighting
+filetype plugin indent on  " enable filetype-specific plugins and indenting
+set secure  " disable unsafe commands
+set hidden  " hide, rather than unload, buffers upon abandonment
+let mapleader = ","  " leader key
+set ruler  " line and column number#
+set autoread  " reload changed files
+set nofoldenable  " disable code folding
 
 " Set clipboard
 if has('unnamedplus') &&
