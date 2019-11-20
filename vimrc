@@ -29,6 +29,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'derekwyatt/vim-scala'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'dag/vim2hs'
+Plug 'udalov/kotlin-vim'
 Plug 'wting/rust.vim'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
@@ -94,12 +95,12 @@ if has("autocmd")
 
   " Strip trailing whitespace on save
   augroup striptrailingws
-    autocmd FileType scala,java,haskell,rust,c,cpp,
+    autocmd FileType scala,java,kotlin,haskell,rust,c,cpp,
                     \ruby,python,typescript,javascript,groovy,php,
                     \html,htmldjango,eruby,css,less,sass,scss,
                     \yaml,json,xml,puppet
                     \ set fileformat=unix
-    autocmd FileType scala,java,haskell,rust,c,cpp,
+    autocmd FileType scala,java,kotlin,haskell,rust,c,cpp,
                     \ruby,python,typescript,javascript,groovy,php,
                     \html,htmldjango,eruby,css,less,sass,scss,
                     \yaml,json,xml,puppet
