@@ -29,13 +29,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'derekwyatt/vim-scala'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'dag/vim2hs'
-Plug 'vim-scripts/groovy.vim--Ruley'
 Plug 'wting/rust.vim'
-Plug 'pbrisbin/html-template-syntax'
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'tpope/vim-haml'
-Plug 'groenewege/vim-less'
-Plug 'rodjek/vim-puppet'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 call plug#end()
@@ -86,9 +80,6 @@ let g:EasyMotion_leader_key = '<Leader>'
 if ! executable("pep8")
   let g:pep8_map="\u0000"
 endif
-
-" Enable only specific javascript libraries.
-let g:used_javascript_libs = 'jquery,angularjs,requirejs'
 
 " Disable JSON quote conceal
 let g:vim_json_syntax_conceal = 0
