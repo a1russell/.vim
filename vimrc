@@ -76,8 +76,8 @@ map <leader>b :Bufstop<CR>
 map <leader>a :BufstopModeFast<CR>
 let g:BufstopAutoSpeedToggle = 1
 
-" Map NERD Tree to \d
-nmap <leader>d :execute 'NERDTreeToggle "' . getcwd() . '"'<CR>
+" Map NERD Tree to alt-1
+nmap <A-1> :execute 'NERDTreeToggle "' . getcwd() . '"'<CR>
 
 " EasyMotion leader key
 let g:EasyMotion_leader_key = '<Leader>'
