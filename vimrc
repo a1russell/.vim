@@ -47,7 +47,6 @@ set hidden  " hide, rather than unload, buffers upon abandonment
 let mapleader = ","  " leader key
 set ruler  " line and column number#
 set autoread  " reload changed files
-set nofoldenable  " disable code folding
 
 " Set clipboard
 if has('unnamedplus') &&
@@ -131,6 +130,12 @@ if has("autocmd")
   augroup completionmenu
     au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
     set completeopt=menuone,menu,longest,preview
+  augroup END
+  
+  " Start with code folds open by default
+  augroup opencodefolds
+    execute "autocmd Syntax " . join(s:sourceFileTypes, ",") . " setlocal foldmethod=syntax"
+    execute "autocmd Syntax " . join(s:sourceFileTypes, ",") . " normal zR"
   augroup END
 endif
 
