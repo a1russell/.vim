@@ -29,6 +29,7 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-ruby/vim-ruby'
 Plug 'derekwyatt/vim-scala'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'dag/vim2hs'
 Plug 'udalov/kotlin-vim'
 Plug 'wting/rust.vim'
