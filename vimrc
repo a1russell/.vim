@@ -25,6 +25,7 @@ Plug 'rking/ag.vim'
 Plug 'elzr/vim-json'
 Plug 'ingydotnet/yaml-vim'
 Plug 'chase/vim-ansible-yaml'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-ruby/vim-ruby'
 Plug 'derekwyatt/vim-scala'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -81,6 +82,9 @@ let g:EasyMotion_leader_key = '<Leader>'
 if ! executable("pep8")
   let g:pep8_map="\u0000"
 endif
+
+" Prefer Python 3 syntax checking over Python 2
+let g:pymode_python = 'python3'
 
 " Disable JSON quote conceal
 let g:vim_json_syntax_conceal = 0
