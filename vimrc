@@ -49,14 +49,34 @@ let mapleader = ","  " leader key
 set ruler  " line and column number#
 set autoread  " reload changed files
 
+" Disable clipboard usage for deletes
+nnoremap d "_d
+xnoremap d "_d
+nnoremap D "_D
+xnoremap D "_D
+nnoremap C "_C
+xnoremap C "_C
+nnoremap c "_c
+xnoremap c "_c
+
 " Set clipboard
 if has('unnamedplus') &&
   \has('unix') &&
   \'Darwin' != system('echo -n "$(uname)"')
   set clipboard=unnamedplus
+  " Mappings for deletion to clipboard
+  nnoremap <leader>d "+d
+  xnoremap <leader>d "+d
+  nnoremap <leader>D "+D
+  xnoremap <leader>D "+D
 else
   " one mac and windows, use * register for copy-paste
   set clipboard=unnamed
+  " Mappings for deletion to clipboard
+  nnoremap <leader>d "*d
+  xnoremap <leader>d "*d
+  nnoremap <leader>D "*D
+  xnoremap <leader>D "*D
 endif
 
 " Improved searching
