@@ -98,19 +98,38 @@ if has("autocmd")
     au InsertLeave * :set rnu
   augroup END
 
+  let s:sourceFileTypes =
+    \[ 'c'
+    \, 'cpp'
+    \, 'css'
+    \, 'eruby'
+    \, 'groovy'
+    \, 'haskell'
+    \, 'html'
+    \, 'htmldjango'
+    \, 'java'
+    \, 'javascript'
+    \, 'json'
+    \, 'kotlin'
+    \, 'less'
+    \, 'php'
+    \, 'puppet'
+    \, 'python'
+    \, 'ruby'
+    \, 'rust'
+    \, 'sass'
+    \, 'scss'
+    \, 'scala'
+    \, 'typescript'
+    \, 'xml'
+    \, 'yaml'
+    \]
+
   " Strip trailing whitespace on save
   augroup striptrailingws
-    autocmd FileType scala,java,kotlin,haskell,rust,c,cpp,
-                    \ruby,python,typescript,javascript,groovy,php,
-                    \html,htmldjango,eruby,css,less,sass,scss,
-                    \yaml,json,xml,puppet
-                    \ set fileformat=unix
-    autocmd FileType scala,java,kotlin,haskell,rust,c,cpp,
-                    \ruby,python,typescript,javascript,groovy,php,
-                    \html,htmldjango,eruby,css,less,sass,scss,
-                    \yaml,json,xml,puppet
-                    \ autocmd BufWritePre <buffer>
-                    \ :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+    execute "autocmd FileType " . join(s:sourceFileTypes, ",") . " set fileformat=unix"
+    execute "autocmd FileType " . join(s:sourceFileTypes, ",") . " autocmd BufWritePre <buffer> " .
+           \':call setline(1,map(getline(1,"$"),''substitute(v:val,"\\s\\+$","","")''))'
   augroup END
 
   " Automatically open and close the completion popup menu & preview window
