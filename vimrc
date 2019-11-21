@@ -37,6 +37,10 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 call plug#end()
 
+let g:coc_global_extensions =
+  \[ 'coc-tsserver'
+  \]
+
 " Config
 set backspace=indent,eol,start  " more powerful backspacing
 set nowrap  " disable line wrapping
