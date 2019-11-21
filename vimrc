@@ -6,6 +6,7 @@ set nocompatible  " Use Vim defaults instead of 100% vi compatibility
 call plug#begin(vimhome . '/bundle')
 
 " Plugins
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'justinmk/vim-dirvish'
 Plug 'fholgado/minibufexpl.vim'
@@ -20,7 +21,6 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
-Plug 'ervandew/supertab'
 Plug 'rking/ag.vim'
 Plug 'elzr/vim-json'
 Plug 'ingydotnet/yaml-vim'
