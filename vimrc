@@ -16,8 +16,8 @@ Plug 'mihaifm/bufstop'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'embear/vim-localvimrc'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'  " used by vim-snipmate
+Plug 'tomtom/tlib_vim'  " used by vim-snipmate
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
