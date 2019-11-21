@@ -8,7 +8,6 @@ call plug#begin(vimhome . '/bundle')
 " Plugins
 Plug 'lifepillar/vim-solarized8'
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'vim-scripts/bufkill.vim'
 Plug 'scrooloose/syntastic'
@@ -155,7 +154,7 @@ if has("autocmd")
     au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
     set completeopt=menuone,menu,longest,preview
   augroup END
-
+  
   " Start with code folds open by default
   augroup opencodefolds
     execute "autocmd Syntax " . join(s:sourceFileTypes, ",") . " setlocal foldmethod=syntax"
