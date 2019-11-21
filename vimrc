@@ -92,9 +92,6 @@ map <leader>b :Bufstop<CR>
 map <leader>a :BufstopModeFast<CR>
 let g:BufstopAutoSpeedToggle = 1
 
-" EasyMotion leader key
-let g:EasyMotion_leader_key = '<Leader>'
-
 " Disable pep8 plugin if pep8 executable doesn't exist.
 if ! executable("pep8")
   let g:pep8_map="\u0000"
