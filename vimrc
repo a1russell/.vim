@@ -7,7 +7,7 @@ call plug#begin(vimhome . '/bundle')
 
 " Plugins
 Plug 'lifepillar/vim-solarized8'
-Plug 'scrooloose/nerdtree'
+Plug 'justinmk/vim-dirvish'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'vim-scripts/bufkill.vim'
 Plug 'scrooloose/syntastic'
@@ -91,12 +91,6 @@ map! <C-Insert> "*y
 map <leader>b :Bufstop<CR>
 map <leader>a :BufstopModeFast<CR>
 let g:BufstopAutoSpeedToggle = 1
-
-" Map NERD Tree to alt-1
-nmap <A-1> :execute 'NERDTreeToggle "' . getcwd() . '"'<CR>
-
-" Automatically delete a file buffer upon deletion via NERDTree
-let NERDTreeAutoDeleteBuffer = 1
 
 " EasyMotion leader key
 let g:EasyMotion_leader_key = '<Leader>'
