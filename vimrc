@@ -38,7 +38,8 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 call plug#end()
 
 let g:coc_global_extensions =
-  \[ 'coc-tsserver'
+  \[ 'coc-eslint'
+  \, 'coc-tsserver'
   \]
 
 " Config
